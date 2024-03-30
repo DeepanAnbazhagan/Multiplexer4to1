@@ -22,5 +22,5 @@
 module Fourto1MUX(y, a, b, c, d, s0, s1);
 output y;
 input a, b, c, d, s0, s1;
-                               //Write the logic for 4 to 1 MUX using conditional operator                            
+  assign y = s1? (s0?d:c) : (s0?b:a);                            
 endmodule
